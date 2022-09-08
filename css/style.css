@@ -49,7 +49,7 @@ header {
   color: white;
   z-index: 1;
 }
-#forwhom > span {
+.sex {
   padding: 0 0.7em 0 0;
 }
 header #logo {
@@ -64,10 +64,18 @@ header .icons {
   /* background-color: red; */
   margin: 3em auto;
   width: 80%;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 1em; */
+}
+
+.row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0 1em;
+  width: 100%;
 }
 
 .card {
@@ -110,30 +118,35 @@ header .icons {
 .favourite:hover {
   color: red;
 }
+
+.banner {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  display: inline-block;
+}
 .discount {
   background-color: red;
+  display: inline-block;
   padding: 0.1em 1em;
   text-align: center;
   vertical-align: middle;
-  position: absolute;
-  bottom: 10%;
+  /* position: absolute;
+  bottom: 10%; */
   color: white;
 }
 
 .sustainability {
   background-color: green;
+  display: inline-block;
   padding: 0.1em 1em;
   text-align: center;
   vertical-align: middle;
-  position: absolute;
+  /* position: absolute;
   bottom: 10%;
-  left: 15%;
+  left: 15%; */
   color: white;
   font-weight: bold;
-}
-
-.odd {
-  left: 0;
 }
 
 .brand {
